@@ -23,9 +23,9 @@
     <!-- About Me Section -->
     <section id="about">
         <div class="container">
-            <h2>About Me and Academic Honesty</h2>
+            <h2>About Me</h2>
             <p>
-                Hey there! I'm Asem Al-Hakami, learning at Seneca College and diving into the world of programming. I'm passionate about crafting digital solutions that work seamlessly and delight users. With a hunger for learning, I'm on a mission to master the art of coding. When I'm not coding, you'll find me exploring the outdoors or capturing moments with my camera. Let's connect and create something awesome together!
+                Hey there! I'm Asem Al-Hakami, currently navigating the fascinating world of programming at Seneca College. Crafting digital solutions is more than just a passion for me; it's a calling. I thrive on the challenge of creating seamless experiences that not only meet but exceed user expectations. With an unwavering commitment to continuous growth, I'm on a relentless pursuit to master the art of coding. When I'm not immersed in lines of code, you'll often find me exploring the great outdoors or capturing life's moments through the lens of my camera. I'm eagerly looking forward to connecting with fellow enthusiasts and joining forces to bring our collective visions to life!
             </p>
             <div class="info">
                 <div>
@@ -76,14 +76,14 @@
                 <label for="city">City:</label>
                 <input list="cities" id="city" name="city" placeholder="Your City" required>
                 <datalist id="cities">
-                    <option value="Toronto">
-                    <option value="Montreal">
-                    <option value="Vancouver">
-                    <!-- Add more options here -->
+                    <option value="Toronto"></option>
+                    <option value="Montreal"></option>
+                    <option value="Vancouver"></option>
                 </datalist>
                 
+                
                 <label for="postal_code">Postal Code:</label>
-                <input type="text" id="postal_code" name="postal_code" placeholder="Your Postal Code" pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d" required>
+                <input type="text" id="postal_code" name="postal_code" placeholder="Your Postal Code" pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$" required title="Please enter a valid Canadian postal code. Example: M5V 3K2 or M5V3K2">                
                 
                 <label for="reason">Reason:</label>
                 <div class="input-group">
