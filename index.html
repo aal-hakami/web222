@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asem Al-Hakami - Web Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <img src="assets/Asem-Pic.jpg" alt="Asem Al-Hakami" class="profile-picture">
+            <h1>Asem Al-Hakami</h1>
+            <h2>Web Developer</h2>
+            <a href="assets/Asem-Resume.pdf" class="button" download>Resume</a>
+            <a href="#contact" class="button">Contact Me</a>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me and Academic Honesty</h2>
+            <p>
+                Hey there! I'm Asem Al-Hakami, learning at Seneca College and diving into the world of programming. I'm passionate about crafting digital solutions that work seamlessly and delight users. With a hunger for learning, I'm on a mission to master the art of coding. When I'm not coding, you'll find me exploring the outdoors or capturing moments with my camera. Let's connect and create something awesome together!
+            </p>
+            <div class="info">
+                <div>
+                    <h3>Basic Information</h3>
+                    <p></p>
+                    <p><strong>Age:</strong> 30</p>
+                    <p><strong>Email:</strong> aal-hakami@myseneca.ca</p>
+                    <p><strong>Language:</strong> English, Arabic</p>
+                    <p><strong>Class Section:</strong> NEE</p>
+                    <p><strong>Student ID:</strong> 156837205</p>
+                    <p><strong>Instructor:</strong> Mark Meritt</p>
+                    <p><strong>Date:</strong> April 17, 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <div class="education-block">
+                <h3>Bachelor's Degree</h3>
+                <p>Michigan University - Architecture</p>
+                <p>Graduated: 2017</p>
+            </div>
+            <div class="education-block">
+                <h3>Current Student</h3>
+                <p>Seneca College - Programming</p>
+                <p>Expected Graduation: 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form" class="contact-form" action="https://httpbin.org/post" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Your Address" required>
+                
+                <label for="city">City:</label>
+                <input list="cities" id="city" name="city" placeholder="Your City" required>
+                <datalist id="cities">
+                    <option value="Toronto">
+                    <option value="Montreal">
+                    <option value="Vancouver">
+                    <!-- Add more options here -->
+                </datalist>
+                
+                <label for="postal_code">Postal Code:</label>
+                <input type="text" id="postal_code" name="postal_code" placeholder="Your Postal Code" pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d" required>
+                
+                <label for="reason">Reason:</label>
+                <div class="input-group">
+                    <input type="radio" id="question" name="reason" value="Question" required>
+                    <label for="question">Question</label>
+                
+                    <input type="radio" id="comment" name="reason" value="Comment" required>
+                    <label for="comment">Comment</label>
+                
+                    <input type="radio" id="hiring" name="reason" value="Hiring" required>
+                    <label for="hiring">Hiring</label>
+                </div>
+                
+                <div class="input-group" id="hourly_rate_field" style="display: none;">
+                    <label for="hourly_rate">Hourly Rate (if Hiring):</label>
+                    <input type="number" id="hourly_rate" name="hourly_rate" placeholder="Your Hourly Rate">
+                </div>
+                
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                
+                <select id="preferred_contact_time" name="preferred_contact_time" required>
+                    <option value="">Select Preferred Contact Time</option>
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="evening">Evening</option>
+                </select>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            &copy; 2024 Asem Al-Hakami. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
